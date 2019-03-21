@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>News Widget Demo</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #323437;
+        }
+
+        .container {
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+            background-color: #f4f4f4;
+        }
+
+        .filler {
+            background-color: #ccd1dd;
+        }
+
+        .full {
+            width: 100%;
+        }
+
+        .half {
+            width: 50%;
+        }
+
+        @media (min-width: 576px) {
+            .container {
+                width: 556px;
+                padding-left: 14px;
+                padding-right: 14px;
+            }
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                width: 748px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                width: 972px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                width: 1180px;
+            }
+        }
+
+        @media (min-width: 1460px) {
+            .container {
+                width: 1440px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="full" style="margin-bottom: 14px;">
+            <div class="filler" style="height: 250px;"></div>
+        </div>
+        <div class="half" style="float: left; display: inline-block; margin-top: 14px;">
+            <div class="filler" style="height: 2000px; margin-right: 7px;"></div>
+        </div>
+        <div class="half" style="display: inline-block; margin-top: 14px;">
+            <div class="filler" style="height: 2000px; margin-left: 7px;"></div>
+        </div>
+        <script type="text/javascript" src="widget.js"></script>
+        <iframe id="NewsWidget" src="embed.html?id=1&numItems=8&maxItemsPerRow=4" width="100%" frameborder="0" scrolling="no"></iframe>
+        <div class="half" style="float: left; display: inline-block; margin-top: 14px;">
+            <div class="filler" style="height: 650px; margin-right: 7px;"></div>
+        </div>
+        <div class="half" style="display: inline-block; margin-top: 14px;">
+            <div class="filler" style="height: 650px; margin-left: 7px;"></div>
+        </div>
+    </div>
+</body>
+</html>
